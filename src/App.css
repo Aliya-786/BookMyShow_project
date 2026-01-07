@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+.movie-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+}
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+.seat {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.seat.booked {
+  background: red;
+  cursor: not-allowed;
+}
+.seat.selected {
+  background: green;
+  color: white;
+}
