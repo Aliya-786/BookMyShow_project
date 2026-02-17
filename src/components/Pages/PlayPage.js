@@ -1,12 +1,10 @@
-import React from 'react'
+import React from "react";
 
 // HOC
-import DefaultlayoutHoc from "../layout/Default.layout";
+import DefaultLayoutHoc from "../Layout/DefaultLayout";
 
 const PlayPage = () => {
-  return (
-    <div>PlayPage</div>
-  )
-}
+  return <div>PlayPage</div>;
+};
 
-export default DefaultlayoutHoc(PlayPage)
+export default DefaultLayoutHoc(PlayPage);

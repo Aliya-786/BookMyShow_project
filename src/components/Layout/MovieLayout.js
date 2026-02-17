@@ -1,7 +1,7 @@
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../Footer";
 
 // component
-import Navbar from "../components/Navbar/Navbar.Component";
+import Navbar from "../Navbar/MovieNavbar";
 
 const MovielayoutHoc =
   (Component) =>
@@ -10,6 +10,7 @@ const MovielayoutHoc =
       <div>
         <Navbar />
         <Component {...props} />
+        <Footer />
       </div>
     );
   };

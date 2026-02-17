@@ -5,9 +5,9 @@ import axios from "axios";
 import DefaultLayoutHoc from "../Layout/DefaultLayout";
 
 // Components
-import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.Component";
-import HeroCarousel from "../components/HeroCarousel/HeroCarousel.Component";
-import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
+import EntertainmentCardSlider from "../EntertainmentCardSlider";
+import HeroCarousel from "../Hero/HeroCarousel";
+import PosterSlider from "../PosterSlider";
 
 const HomePage = () => {
   const [recommendedMovies, setrecommendedMovies] = useState([]);

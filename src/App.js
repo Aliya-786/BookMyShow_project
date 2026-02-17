@@ -2,10 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import HomePage from "./pages/HomePage";
-import MoviePage from "./pages/MoviePage";
-import PlayPage from "./pages/PlayPage";
-import ErrorPage from "./pages/404";
+import HomePage from "./components/Pages/HomePage";
+import MoviePage from "./components/Pages/MoviePage";
+import PlayPage from "./components/Pages/PlayPage";
+import ErrorPage from "./components/Pages/404";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {};

@@ -1,5 +1,5 @@
 import { BiChevronDown, BiMenu, BiSearch } from "react-icons/bi";
-import CustomModal from "../Modal/Modal.Component";
+import CustomModal from "../Modal";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -49,7 +49,7 @@ function NavLg({ defaultLocation }) {
 
             try {
               const response = await axios.get(
-                `https://api.opencagedata.com/geocode/v1/json?key=${apiKey}&language=en&q=${latitude}+${longitude}`
+                `https://api.opencagedata.com/geocode/v1/json?key=${apiKey}&language=en&q=${latitude}+${longitude}`,
               );
 
               const state = response.data.results[0].components.state;
@@ -62,7 +62,7 @@ function NavLg({ defaultLocation }) {
           (error) => {
             console.error("Error getting user location:", error);
             setLocation(defaultLocation);
-          }
+          },
         );
       } else {
         console.error("Geolocation is not supported by this browser");

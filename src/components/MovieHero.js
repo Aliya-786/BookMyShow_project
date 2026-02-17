@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { MovieContext } from "../../context/Movie.context";
-import MovieInfo from "./MovieInfo.Component";
+import { MovieContext } from "./context/Moviecontext";
+import MovieInfo from "./MovieInfo";
 
 const MovieHero = () => {
   const { movie, rentMoive, buyMoive } = useContext(MovieContext);
@@ -58,9 +58,8 @@ const MovieHero = () => {
           <div
             className="absolute z-10 w-full h-full"
             style={{
-              background: "rgb(0, 0, 0)",
               background:
-                "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(72,16,16,1) 0%, rgba(13,59,44,0.9977240896358543) 49%, rgba(0,0,0,0.0005) 100%);",
+                "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(72,16,16,1) 0%, rgba(13,59,44,0.9977240896358543) 49%, rgba(0,0,0,0.0005) 100%)",
             }}
           >
             <div className="absolute z-30 left-24 top-10 flex items-center gap-10">

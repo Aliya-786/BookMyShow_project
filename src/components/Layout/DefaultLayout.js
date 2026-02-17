@@ -1,6 +1,6 @@
-import Footer from "../components/Footer/Footer.Component";
+import Footer from "../Footer";
 // component
-import Navbar from "../components/Navbar/Navbar.Component";
+import Navbar from "../Navbar/Navbar";
 
 const DefaultlayoutHoc =
   (Component) =>
